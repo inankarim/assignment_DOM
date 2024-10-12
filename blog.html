@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog </title>
+    
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 py-2 flex justify-between items-center">
+            <button id="home-button" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
+                Home
+            </button>
+        </div>
+    </nav>
+
+    <main> 
+    <div class="max-w-7xl mx-auto p-4">
+        <h1 class="text-2xl font-bold mb-4 text-left">Important FAQ</h1>
+
+        <div class="space-y-4">
+            <!-- Add some content to enable scrolling -->
+            <div class="h-96 bg-gray-200 rounded-lg p-4">
+                <h1 class="text-black text-xm font-bold lg:text-2xl ">What is the Document Object Model (DOM)?</h1>
+                <p class=" text-black p-2 text-xs lg:text-xl">The Document Object Model (DOM) is used to represent web documents. A tree of objects, reflects the hierarchical structure of a document(e. g., an XML or HTML file). Every node is an element, attribute, or piece of text in the document. The DOM is a collection of methods and object properties that are used to access the content, structure and style of a document using languages like JavaScript.</p>
+                
+            </div>
+            <div class="h-96 bg-gray-300 rounded-lg p-4">
+                <h1 class="text-black text-xm font-bold lg:text-2xl ">How do you select an element from the DOM?</h1>
+                 <p class=" text-black p-2 text-xs lg:text-xl">
+                    We can select elements from the DOM using various methods in JavaScript. Here are some common ones: <br>
+                    const element = document.getElementById('Id');<br>
+                    const elements = document.getElementsByClassName('Class');<br>
+                    const elements = document.getElementsByTagName('div');<br>
+                    const element = document.querySelector('.myClass');<br>
+                    const elements = document.querySelectorAll('div.myClass');
+                    </p>
+            </div>
+            <div class="h-96 bg-gray-200 rounded-lg p-4">
+                <h1 class="text-black text-xm font-bold lg:text-2xl ">What is event delegation in the context of the DOM, and why is it useful?</h1>
+                <p class=" text-black p-2 text-xs lg:text-xl">
+                    Event delegation is a common practice where we add all the event listeners to parent element and handle on child elements. So if an event happens on a child element, eventually it bubbles up to the parent where any one of these event listeners can pick that up.
+
+                   Benefits of event delegation:
+
+                    This improves performance by decreasing the number of event listeners in the DOM, especially when there are many elements.
+
+                    Dynamic Elements: It Works Automatically for Dynamic child elements as listener will always add to current available element and listening dynamic control which are going get added in future thus works without use of hooks, We can removeEventListener on unmount if user want.
+
+                    Maintenance: Easy to maintain the code as well understand and update event handling.
+                </p>
+
+            </div>
+            <div class="h-96 bg-gray-300 rounded-lg p-4">
+                <h1 class="text-black text-xm font-bold lg:text-2xl ">How do you manipulate an element's attributes and styles using the DOM?</h1>
+                <p class=" text-black p-2 text-xs lg:text-xl">
+                    We can manipulate an element's attributes and styles using JavaScript as follows:
+                    <br>
+                    Set an attribute:
+                    <br>
+                    const element = document.getElementById('myElement');
+                    br
+                    element.setAttribute('data-custom', 'value');
+                    <br>
+                    Get an attribute:
+                    <br>
+                    const value = element.getAttribute('data-custom');
+                    <br>
+                    Remove an attribute:
+                    <br>
+                    element.removeAttribute('data-custom');
+                    <br>
+                    Set a style:
+                    <br>
+                    element.style.backgroundColor = 'blue';
+                    <br>
+                    element.style.fontSize = '16px';
+                </p>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="./js/blog.js"></script>
+</body>
+</html>

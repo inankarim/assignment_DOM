@@ -1,0 +1,10 @@
+.sticky-div{
+    position: sticky;
+    top: 20px;
+    margin-top: 20px;
+}
+
+#coin{
+    width: 5%;
+    height: 5%;
+}

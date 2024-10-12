@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+    <nav class="bg-slate-300 shadow-md sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 py-2 flex justify-between items-center">
+            <!-- Blog Button -->
+            <button id="blog-button" class="btn lg:btn-lg hover:bg-yellow-200">
+                Blog
+            </button>
+ 
+            <!-- Centered Text -->
+            <div class="flex text-center">
+                <img src="./images/logo.png" alt="">
+                <div class="text-xl font-semibold text-gray-700 lg:text-4xl">
+                    <p>Donate Bangladesh</p></div>
+            </div>
+
+            <!-- balance -->
+            <div  class="flex">
+                <img src="./images/coin.png" alt="">
+                <div id="current-balance" class="text-xl lg:text-3xl">5500</div>
+            </div>
+        </div>
+        <div class="text-center mt-5"> 
+            <button id="donate-button" class="btn lg:btn-lg btn-outline ">Donate</button>
+            <button id="history-button"class="btn lg:btn-lg btn-outline ">History</button>
+         </div>
+    </nav>
+
+<!-- card start -->
+<div id="donate-money-form" class="bg-white ">
+    <!-- card-1 noakhali -->
+    <div class="card mt-4 mx-5 lg:mx-24 lg:card-side bg-base-100 shadow-xl">
+        <!-- card1 noakhali -->
+        <figure>
+          <img
+            src="./images/feni.png"
+            alt="Album" />
+        </figure>
+        <div class="card-body bg-white">
+          <div class="p-2 mb-2 mx-1 flex bg-slate-300 w-32 rounded">
+            <img src="./images/coin.png" alt="">
+            <div id="total-donate1" class="lg:text-xl">2400</div>
+            <p class="lg:text-xl">  BDT</p>
+          </div>
+          <h2 id="card-title1" class="card-title text-black text-xl lg:text-2xl p-1"> Donate for Flood at Noakhali,,Bangladesh </h2>
+          <p class="text-black lg:text-xm ">The recent floods in Feni have devastated local communities, leading To severe disruption and loss. Your generous donation will <br> help  provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together,  we can  <br> offer  crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towarads making a real alterence.
+            <br>  Please  consider donating today to assist those in urgent need</p>
+            <div>
+            <input id="input-money1" type="number" placeholder="Write Donation Ammount" class=" bg-white input input-bordered w-full  max-w-3xl" 
+            />
+            <button id="balance-donate1" class="btn btn-wide bg-orange-300  mt-2  w-full max-w-3xl text-black">Donate</button>
+        </div>
+        </div>
+      </div>
+<!-- card1 end -->
+<div class="card mt-4 mx-5 lg:mx-24 lg:card-side bg-base-100 shadow-xl">
+    <!-- card2 feni -->
+    <figure>
+      <img
+        src="./images/feni.png"
+        alt="Album" />
+    </figure>
+    <div class="card-body bg-white">
+        <div class="p-2 mb-2 mx-1 flex bg-slate-300 w-32 rounded">
+            <img src="./images/coin.png" alt="">
+            <div id="total-donate2" class="lg:text-xl">2400</div>
+            <p class="lg:text-xl"> BDT</p>
+          </div>
+      <h2 id="card-title2" class="card-title text-black text-xl lg:text-2xl"> Donate for Flood Relief in Feni,Bangladesh </h2>
+      <p class="text-black lg:text-xm ">The recent floods in Feni have devastated local communities, leading To severe disruption and loss. Your generous donation will <br> help  provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together,  we can  <br> offer  crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towarads making a real alterence.
+        <br>  Please  consider donating today to assist those in urgent need</p>
+        <div>
+        <input id="input-money2" type="number" placeholder="Write Donation Ammount" class=" bg-white input input-bordered w-full  max-w-3xl" />
+        <button id="balance-donate2" class="btn btn-wide bg-orange-300 text-black mt-2  w-full max-w-3xl">Donate</button>
+    </div>
+    </div>
+  </div>
+  <!-- card2 end -->
+  <div class="card mt-4 mx-5 lg:mx-24 lg:card-side bg-base-100 shadow-xl">
+    <!-- card3 qouta -->
+    <figure>
+      <img
+        src="./images/feni.png"
+        alt="Album" />
+    </figure>
+    <div class="card-body bg-white">
+        <div class="p-2 mb-2 mx-1 flex bg-slate-300 w-32 rounded">
+            <img src="./images/coin.png" alt="">
+            <div id="total-donate3" class="lg:text-xl">2400</div>
+            <p class="lg:text-xl"> BDT</p>
+          </div>
+      <h2 id="card-title3" class="card-title text-black text-xl lg:text-2xl">Aid for Iniured in the Quota Movement </h2>
+      <p class="text-black lg:text-xm p-1 ">The recent floods in Feni have devastated local communities, leading To severe disruption and loss. Your generous donation will <br> help  provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together,  we can  <br> offer  crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towarads making a real alterence.
+        <br>  Please  consider donating today to assist those in urgent need</p>
+        <div>
+        <input id="input-money3" type="number" placeholder="Write donation ammount" class=" bg-white input input-bordered w-full  max-w-3xl" />
+        <button id="balance-donate3" class="btn btn-wide bg-orange-300 text-black mt-2  w-full max-w-3xl">Donate</button>
+
+    </div>
+    </div>
+  </div>
+  <!-- card3 end -->
+
+
+
+</div>
+<!-- card end -->
+<div id="history-card-form" class="mt-3 hidden bg-white h-full max-h-screen">
+    <div id="history-container" class="space-y-3 text-center text-2xl">
+
+    </div>
+
+<!-- history start -->
+</div>
+<script src="./js/head.js"></script>
+<script src="js/main.js"></script>
+<script src="./js/function.js"></script>
+
+</body>
+</html>
